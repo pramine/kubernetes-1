@@ -1,20 +1,21 @@
-#Persistent Volumes
+#Persistent Volumes  
+
 Persistent volumes let pods create storage that persists beyond the lifetime of a pod.
 In Kubernetes, persistent storage is managed through the Kubernetes API resources, PersistentVolume and PersistentVolumeClaim. The storage components in Kubernetes support a variety of backends (e.g. NFS, EBS, etc.)
 
-VolumeTypes
+#VolumeTypes
 A directory which is mounted inside a Pod is backed by the underlying Volume Type. A Volume Type decides the properties of the directory, like size, content, etc. Some of the Volume Types are:
 
-emptyDir
+#emptyDir
 An empty Volume is created for the Pod as soon as it is scheduled on the Worker Node. The Volume's life is tightly coupled with the Pod. If the Pod dies, the content of emptyDir is deleted forever.
 
-hostPath
-With the hostPath Volume Type, we can share a directory from the host to the Pod. If the Pod dies, the content of the Volume is still available on the host.
+#hostPath
+With the hostPath Volume Type, we can share a directory from the host to the Pod. If the Pod dies, the content of the Volume is still available on the host.  
 
-gcePersistentDisk
+#gcePersistentDisk
 With the gcePersistentDisk Volume Type, we can mount a Google Compute Engine (GCE) persistent disk into a Pod.
 
-awsElasticBlockStore
+#awsElasticBlockStore
 With the awsElasticBlockStore Volume Type, we can mount an AWS EBS Volume into a Pod.
 
 nfs
