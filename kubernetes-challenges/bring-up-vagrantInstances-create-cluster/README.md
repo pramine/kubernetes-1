@@ -29,5 +29,19 @@ To login to vagrant box
 ```
 ]#vagrant ssh master
 [vagrant@master ~]$
+```
 
+For graceful shutdown 
+```
+]#vagrant halt
+```
+
+To bringup the shutdown instance
+```
+]#vagrant up
+```
+
+To remove VM altogether from your machine
+```
+]#vagrant destroy
 ```
