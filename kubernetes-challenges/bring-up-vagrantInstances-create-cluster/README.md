@@ -9,3 +9,25 @@ Bringing machine 'node2' up with 'virtualbox' provider...
 .....
 ......
 ```
+
+Once complete to view the vagrant box status
+
+```
+]#vagrant status
+Current machine states:
+
+master                    running (virtualbox)
+node1                     running (virtualbox)
+node2                     running (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+```
+
+To login to vagrant box
+```
+]#vagrant ssh master
+[vagrant@master ~]$
+
+```
