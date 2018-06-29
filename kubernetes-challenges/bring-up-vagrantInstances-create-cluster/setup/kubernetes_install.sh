@@ -21,8 +21,6 @@ sed -i 's/^SELINUX=.*/SELINUX=disabled/' /etc/selinux/config
 
 yum install -y kubelet kubeadm kubectl nfs-utils
 
-yum install -y kubelet kubeadm kubectl nfs-utils
-
 cat <<EOF >  /etc/sysctl.d/k8s.conf
 net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
