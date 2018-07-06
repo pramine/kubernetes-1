@@ -1,4 +1,4 @@
-#Kubernetes + nodejsapp
+# Kubernetes + nodejs
 
 #Building new docker image <br>
 docker build -t nodejsapp:v2 .
