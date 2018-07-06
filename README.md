@@ -3,7 +3,7 @@
 ## Kubernetes Components
 Master<br>
 -----------------
-*apiserver- Provides the API for Kubernetes orchestration, interact with the manifest yaml, via Rest operations or kubectl cli.<br>
+<b>apiserver</b>- Provides the API for Kubernetes orchestration, interact with the manifest yaml, via Rest operations or kubectl cli.<br>
 *scheduler- Schedules containers on hosts, it is the scheduler’s responsibility to allocate pods to available nodes based on the resource requirement.<br>
 *Controller Manager- The Controller Manager reconciles the actual state with the desired state. <br>
 There are multiple specialized controllers inside a Controller Manager in order to simplify cluster management. <br>
