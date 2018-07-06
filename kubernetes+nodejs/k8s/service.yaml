@@ -11,6 +11,6 @@ spec:
   - port: 2000
     protocol: TCP
     #port which want to expose to outside
-    nodePort: 2000
+    nodePort: 30003
   selector:
     app: nodejsapp
