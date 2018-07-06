@@ -10,6 +10,7 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 nodejsapp           v1                  30761d6347c2        About an hour ago   70MB
 node                alpine              a4558aa39064        9 hours ago         70MB
 ```
+
 ## Tagging docker image <br>
 ]#docker tag nodejsapp:v2 saviovettoor/nodejsapp:v2 <br>
 
@@ -24,9 +25,8 @@ deployment.apps "nodejsapp" created
 list out the running pods
 ]#kubectl get pods
 NAME                         READY     STATUS              RESTARTS   AGE
-nodejsapp-698c77cc86-rmk6l   1/1       Running  			0         45s
-nodejsapp-698c77cc86-fk2w4   1/1       Running   			0         49s
-
+nodejsapp-698c77cc86-rmk6l   1/1       Running 	0         45s
+nodejsapp-698c77cc86-fk2w4   1/1       Running  0         49s
 ```
 
 ## Creating service to access the app <br>
