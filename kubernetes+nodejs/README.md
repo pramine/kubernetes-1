@@ -41,3 +41,16 @@ kubernetes             ClusterIP   10.96.0.1      <none>        443/TCP         
 my-nodejsapp-service   NodePort    10.104.246.2   <none>        2000:30003/TCP   6m
 ```
 
+## Lets access the app via minikube ip and service port
+```
+]#minikube ip
+192.168.99.100
+
+Let do a curl or try to access the url via browser
+]#curl 192.168.99.100:30003
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    45    0    45    0     0   2812      0 --:--:-- --:--:-- --:--:--  2812<p><strong>My Sample NodeJs App</strong>!</p>
+
+
+```
