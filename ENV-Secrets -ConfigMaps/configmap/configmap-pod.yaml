@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: configmap-envs
+spec:
+  containers:
+  - name: sample-env
+    image: httpd:latest
+    ports:
+    - containerPort: 80
+    envFrom:
+    - configMapRef:
+        name: my-env

@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: envs
+spec:
+  containers:
+  - name: sample-env
+    image: httpd:latest
+    ports:
+    - containerPort: 80
+    env:
+      - name: SAMPLE_HTTPD_HOST
+        value: "MyHTTPDServer"
+      - name: SAMPLE_HTTP_PORT
+        value: "8080"
+      - name: SAMPLE_HTTPS_PORT
+        value: "443"
