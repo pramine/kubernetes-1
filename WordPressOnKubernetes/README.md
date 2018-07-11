@@ -73,5 +73,5 @@ wordpress   LoadBalancer   10.102.246.11   <pending>     80:30541/TCP   1m
 ]#minikube service wordpress --url
 http://192.168.99.101:30541
 
-<img src="images/wordpress-startup-page.png">
+<img src="images/wordpress-startup-page.PNG">
 ```
