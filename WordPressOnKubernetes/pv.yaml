@@ -8,4 +8,4 @@ spec:
     accessModes:
         - ReadWriteOnce #The volume can be mounted as read-write by a single node
     hostPath:
-      path: /opt/WordPress-pv
+      path: /tmp/WordPress-pv

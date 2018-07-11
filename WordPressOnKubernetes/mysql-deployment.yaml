@@ -24,13 +24,18 @@ spec:
     requests:
       storage: 10Gi
 ---
-apiVersion: extensions/v1beta1
+
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
   name: wordpress-mysql
   labels:
     app: wordpress
 spec:
+  selector:
+    matchLabels:
+      app: wordpress
+      tier: mysql
   strategy:
     type: Recreate
   template:
@@ -53,8 +58,7 @@ spec:
           name: mysql
         volumeMounts:
         - name: mysql-persistent-storage
-        #MySQL container mounts the PersistentVolume
-          mountPath: /opt/mysql
+          mountPath: /var/lib/mysql
       volumes:
       - name: mysql-persistent-storage
         persistentVolumeClaim:
