@@ -74,3 +74,8 @@ wordpress   LoadBalancer   10.102.246.11   <pending>     80:30541/TCP   1m
 http://192.168.99.101:30541
 ```
 <img src="images/wordpress-startup-page.PNG">
+
+## Lets test it
+
+1. carete a sample page of wordpress.
+2. Now lets list out the pods and remove the pod and see whether the page which we created still there once the new pode came up. 
