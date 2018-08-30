@@ -1,8 +1,9 @@
 # Kubernetes + nodejs
 
 ## Building new docker image <br>
-docker build -t nodejsapp:v2 . <br>
-
+```
+docker build -t nodejsapp:v2 .
+```
 ## List out the docker images <br>
 ```
 ]#docker images
