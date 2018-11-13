@@ -19,4 +19,4 @@ Nodes<br>
 It uses iptable rules or round robin to forward requests to the correct containers.<br>
 <b>kubelet</b> – A Kubelet node agent periodically checks the health of the containers in a pod. In addition, it ensures that the volume is mounted as per manifest, <br>
 and it downloads the sensitive information required to run the container.It also links the node to the API server.<br>
-Container Runtime - Docker/Rocket
+<b>Container Runtime<b> - Docker/Rocket
