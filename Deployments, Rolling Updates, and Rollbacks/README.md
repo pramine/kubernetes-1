@@ -1,4 +1,4 @@
-##Deployment, Rolling Updates, and Rollbacks
+## Deployment, Rolling Updates, and Rollbacks
 
 Deploying a node-js app where image saviovettoor/nodejsapp
 ```
